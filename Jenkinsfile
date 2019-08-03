@@ -1,5 +1,10 @@
 pipeline {
   agent any
+  tools {
+    maven 'MAVEN3'
+    jdk 'JAVA8'
+    }
+
   stages {
     stage('Clean') {
        steps {
